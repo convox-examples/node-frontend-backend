@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: ./frontend
+    port: 80
+    domain: ${HOST}
+    links:
+      - backend
+  backend:
+    build: ./backend
+    port: 8080
+    internal: true
