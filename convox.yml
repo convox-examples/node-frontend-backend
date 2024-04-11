@@ -9,3 +9,4 @@ services:
     build: ./backend
     port: 8080
     internal: true
+
